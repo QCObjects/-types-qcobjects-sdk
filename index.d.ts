@@ -140,13 +140,13 @@ declare namespace sdk {
     class GridView extends View { }
     class BasicLayout extends InheritClass { }
     class SessionUserToken extends InheritClass {
-        generateIndex(...args: Array<any>): string;
-        getGlobalUser(...args: Array<any>): SessionUser;
-        getGlobalUserToken(...args: Array<any>): string;
-        getGlobalUserId(...args: Array<any>): string;
-        getGlobalUserPriority(...args: Array<any>): string;
-        getLoginCredentialsToken(username: string, password: string): string;
-        closeGlobalSession(): void;
+        static generateIndex(...args: Array<any>): string;
+        static getGlobalUser(...args: Array<any>): SessionUser;
+        static getGlobalUserToken(...args: Array<any>): string;
+        static getGlobalUserId(...args: Array<any>): string;
+        static getGlobalUserPriority(...args: Array<any>): string;
+        static getLoginCredentialsToken(username: string, password: string): string;
+        static closeGlobalSession(): void;
 
     }
     class SessionData extends InheritClass {
